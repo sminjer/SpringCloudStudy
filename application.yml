@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active:
+
+---
+spring:
+  profiles: dev
+  application:
+    name: springcloud-server
+
+---
+spring:
+  profiles: test
+  application:
+    name: springcloud-test
