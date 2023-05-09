@@ -7,8 +7,9 @@ server:
   port: 7001
 
 spring:
+  profiles: dev
   application:
-    name: dev
+    name: springcloud-eureka-dev
 eureka:
   instance:
     hostname: eureka7001.com #Eureka服务端的实例名称
@@ -25,8 +26,9 @@ server:
   port: 7002
 
 spring:
+  profiles: test
   application:
-    name: test
+    name: springcloud-eureka-test
 eureka:
   instance:
     hostname: eureka7001.com #Eureka服务端的实例名称
